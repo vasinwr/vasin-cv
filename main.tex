@@ -1,0 +1,299 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper]{deedy-resume-openfont}
+
+\setmainfont{Lato Light}
+
+\definecolor{primary}{HTML}{cccccc}
+\definecolor{headings}{HTML}{222222}
+\definecolor{subheadings}{HTML}{000000}
+
+\usepackage{framed,color}
+\definecolor{shadecolor}{rgb}{0.9,0.9,0.9}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{}{ Vasin Wongrassamee}{ 
+\href{mailto:vasinwr@gmail.com}{vasinwr@gmail.com}  (+44) 7517606710 | Flat4, 34 Cornwall Gardens, London SW7 4AP
+}
+\vskip 0.4cm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{snugshade}
+\section{Education}
+\end{snugshade}
+\subsection{BEng Computing}
+\subsection{Imperial College London}
+\location{2014 - ongoing | London, UK}
+\vskip 0.2cm
+\descript{ Expected: \textbf{First-Class Honours}}
+\hspace{0.6cm}Second year overall score: A\\
+\hspace{0.6cm}First year overall score: A
+\vskip 0.2cm
+\descript{ Relevant courses:} 
+\hspace{0.6cm}Software Engineering | \\ 
+\hspace{0.6cm}Algorithms | Compiler | \\
+\hspace{0.6cm}Architecture | A.I. | \\
+\hspace{0.6cm}Operating Systems | \\
+\hspace{0.6cm}Concurrency | Networks \\
+\hspace{0.6cm}and Communications | \\
+\hspace{0.6cm}Databases | Statistics
+
+\sectionsep
+
+\vskip 0.4cm
+\subsection{Shrewsbury} 
+\subsection {International School}
+\location{2012 - 2014 |  Bangkok, Thailand}
+\descript{GCE A-Levels}
+\hspace{0.6cm} A* Mathematics \\
+\hspace{0.6cm} A* Further Mathematics \\
+\hspace{0.6cm} A* Physics \\
+\hspace{0.6cm} A  Chemistry \\
+\vskip 0.2cm
+Received Sir David Lee's Scholarship for outstanding academic records
+\sectionsep
+
+\vskip 0.4cm
+\subsection{Anglo-Chinese School}
+\location{2010 - 2012 | Singapore}
+Received Merit Award Scholarship from Singapore Ministry of Education
+
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{snugshade}
+%\section{Links}
+%\end{snugshade}
+%Github:// \href{https://github.com/vasinwr}{\custombold{vasinwr}} \\
+%LinkedIn://  \href{https://www.linkedin.com/in/vasinwr}{\custombold{in/vasinwr}} \\
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vskip 0.5cm
+\begin{snugshade}
+\section{Skills}
+\end{snugshade}
+\subsection{Programming}
+\descript{Experienced:}
+\hspace{0.6cm}Java | C | JavaScript \\
+\descript{Comfortable:}
+\hspace{0.6cm}Python | C++ | HTML \\
+\hspace{0.6cm}CSS | Haskell | Prolog | \\
+\hspace{0.6cm}PHP | MySQL | Assembly | \\ 
+\hspace{0.6cm}Verilog \\
+\vskip 0.5cm
+\subsection{Tools and Frameworks}
+\hspace{0.6cm}Django | AngularJS | Yeoman | \\ 
+\hspace{0.6cm}NodeJS | Git: Github://  \href{https://github.com/vasinwr}{\custombold{vasinwr}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.63\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{snugshade}
+\section{Projects \& Experience}
+\end{snugshade}
+
+\runsubsection{Department of Computing}
+\descript{| Teaching Assistant }
+\location{ September 2016 - Ongoing | Imperial College London, UK}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item {\small Selected by the department to teach 7 university students programming concepts in \textbf{Haskell} and \textbf{Java} }
+\end{tightemize}
+\sectionsep
+
+\vskip 0.2cm
+
+\runsubsection{Imperial College London \& Sony}
+\descript{| Research Student }
+\location{ June 2016 – September 2016 | London, UK}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item {\small Researched the significance of \textbf{FPGA} in the performance of \textbf{Intel's HARP platform} during video processing }
+\item {\small Supervised by Professor Wayne Luk and
+funded by Sony}
+\end{tightemize}
+\sectionsep
+
+\vskip 0.2cm
+
+\runsubsection{LiveLe}
+\descript{| Co-Creator \& Developer }
+\location{May 2016 – June 2016 | London, UK | \href{https://github.com/vasinwr/livele}{Github://vasinwr/livele} }
+LiveLe is a web-application aiming to improve the communication between lecturer and students during a lecture via live feedback.
+\begin{tightemize}
+\item {\small Frontend \textbf{NodeJS} server written with \textbf{AngularJS} framework}
+\item {\small Backend API server written in \textbf{Python} with \textbf{Django} framework}
+\end{tightemize}
+\sectionsep
+
+\vskip 0.2cm
+
+\runsubsection{Computing Undergraduate Projects}
+\descript{| Developer}
+\location{October 2016 – March 2016 | Imperial College London, UK}
+\begin{tightemize}
+\item {\small \textbf{PINTOS} - An \textbf{Operating System} supporting threads, arbitrary user programs, virtual memory management and a file system. Written in \textbf{C} on \textbf{Linux}}  
+\item {\small \textbf{WACC} - An \textbf{optimising ARM11 compiler} for the WACC language in \textbf{Java}  }
+\end{tightemize}
+\sectionsep
+
+%\runsubsection{PintOS Operating System}
+%\descript{| Developer}
+%\location{January 2016 – March 2016 | Imperial College London, UK}
+%\begin{tightemize}
+%\item {\small Developed an Operating System supporting \textbf{threads}, arbitrary \textbf{user programs}, \textbf{virtual memory management} and a \textbf{file system}. Written in \textbf{C} on \textbf{Linux}.}  
+%\end{tightemize}
+%\sectionsep
+
+%\runsubsection{WACC Compiler}
+%\descript{| Developer}
+%\location{October 2015 – December 2015 | Imperial College London, UK}
+%\begin{tightemize}
+%\item {\small Designed an \textbf{optimising} ARM11 compiler for the WACC language in \textbf{Java}  }
+%\end{tightemize}
+%\sectionsep
+
+\vskip 0.2cm
+
+\runsubsection{Mobill Scandinavia AB}
+\descript{| Summer Intern}
+\location{August 2015 - September 2015 | Malmö, Sweden}
+Developed MobilLive - a web application for Mobill clients to view \textbf{real-time} events and statistics of their businesses
+\begin{tightemize} 
+\item {\small Helped develop both front and back end. Worked with \textbf{web sockets}, \textbf{servlets}, and \textbf{message queues} in \textbf{Java}, and used \textbf{Maven} }
+\item {\small Explored and made use of various libraries and API including chart.js, quartz scheduler, guava cache, and Google Maps}
+\item {\small Worked in \textbf{Scrum} agile development environment}
+\end{tightemize}
+\sectionsep
+
+\vskip 0.2cm
+
+\runsubsection{ARM ASSEMBLER \& Tower Stacker Game}
+\descript{| Developer}
+\location{May 2015 – June 2015 | Imperial College London, UK}
+\begin{tightemize}
+\item {\small Designed an ARM assembler in \textbf{C}}
+\item {\small Designed a \textbf{Raspberry Pi} Tower Stacker game in \textbf{ARM assembly}}
+\end{tightemize}
+\sectionsep
+
+\vskip 0.2cm
+
+\runsubsection{Cisco}
+\descript{| Work Shadower}
+\location{August 2013 | Bangkok, Thailand}
+
+\sectionsep
+
+%\runsubsection{Asian Regional Space Settlement Design Competition}
+%\descript{| Participant \& Second Place Winner}
+%\location{Febuary 2013 | New Delhi, India}
+%\begin{tightemize}
+%\item {\small Worked under pressure on a time limited project in a team of over \textbf{30 students} from \textbf{5 different countries}}
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{snugshade}
+\section{Other Activities and Interests} 
+\end{snugshade}
+
+
+\begin{tabular}{lll}
+\small Ongoing & \small \textbf{Committee member} of the Thai Society of Imperial College London\\
+\small 2015   & \small Member of the Imperial College Film Society\\
+\small 2014   & \small \textbf{Main actor} for the Thai Night stage play, where 300 tickets were sold \\
+\small 2013   & \small \textbf{2nd Place Winner} at the Asian Space Settlement Design Competition\\ 				& \small in New Delhi, India
+%2012   &  National   & National Society of Collegiate Scholars\\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
